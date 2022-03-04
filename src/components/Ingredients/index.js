@@ -10,7 +10,7 @@ const Ingredients = ({ ingredients }) => {
     <div className="ingredients">
       <ul>
         {
-          // Je reçois des objets dans le tableau "list"
+          // Je reçois des objets dans le tableau "ingrédients"
           // que je déstructure pour récupérer 
           // les propriétés qui m' intéressent
           ingredients.map(({ id, quantity, unit, name }) => (

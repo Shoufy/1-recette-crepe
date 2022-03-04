@@ -2,13 +2,21 @@
 import React from 'react';
 
 // == Import
-import '../../styles/index.scss';
+import 'src/styles/index.scss';
 
 // == Composant
-const Etapes = () => (
-  <div className="app">
- Etapes
-  </div>
+const Etapes = ({ etapes }) => (
+  <ul>
+    {
+      etapes.map((instruction, index) => {
+        return (
+          <li key={'etapes-' + index} >
+            {instruction}
+          </li>
+        );
+      })
+    }
+  </ul>
 );
 
 // == Export
