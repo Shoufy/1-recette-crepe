@@ -18,9 +18,7 @@ const App = () => (
    difficulty={data.difficulty}
     />
    <Ingredients 
-   quantity={data.quantity}
-   unit={data.unit}
-   name={data.name} 
+   ingredients={data.ingredients}
    />
     <Etapes 
    instructions={data.instructions} 
