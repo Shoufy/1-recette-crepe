@@ -1,0 +1,66 @@
+export default {
+  title: 'Crêpes inratable',
+  thumbnail: 'https://images.pexels.com/photos/53483/strawberries-crepe-dessert-sweet-53483.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  info: 'Environ 12 crêpes',
+  difficulty: 'Facile',
+  ingredients: [
+    {
+      id: 1,
+      quantity: 220,
+      unit: 'g',
+      name: "d'oeufs bio, environ 4 oeufs",
+    },
+    {
+      id: 2,
+      quantity: 60,
+      unit: 'g',
+      name: 'de sucre',
+    },
+    {
+      id: 15,
+      quantity: 3,
+      unit: 'g',
+      name: 'de sel',
+    },
+    {
+      id: 28,
+      quantity: 200,
+      unit: 'g',
+      name: 'de farine type 45',
+    },
+    {
+      id: 4,
+      quantity: 500,
+      unit: 'g',
+      name: 'de lait entier de préférence',
+    },
+    {
+      id: 3,
+      quantity: 60,
+      unit: 'g',
+      name: "d'eau",
+    },
+    {
+      id: 845,
+      quantity: 30,
+      unit: 'g',
+      name: 'de rhum ambré ou vieux',
+    },
+    {
+      id: 846,
+      quantity: 1,
+      unit: 'gousse',
+      name: 'de vanille',
+    },
+  ],
+  instructions: [
+    'Fouettez un peu les oeufs avec le sucre et le sel',
+    'Ajoutez y la farine et fouettez à nouveau',
+    "Mélangez ensemble l'eau, le lait et l'alcool et ajoutez y la gousse de vanille",
+    'Ajoutez le tout doucement, tout en fouettant',
+    'Ajoutez enfin le beurre fondu : le mélange doit être homogène',
+    'Laissez reposer la pâte 2 heures à température ambiante',
+    'Faire cuire à la poêle ou à la machine à crêpes.',
+    'Dégustez !',
+  ],
+};
