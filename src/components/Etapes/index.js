@@ -1,5 +1,6 @@
 // == Import npm
 import React from 'react';
+import PropTypes from 'prop-types';
 
 // == Import
 import 'src/styles/index.scss';
@@ -18,6 +19,10 @@ const Etapes = ({ etapes }) => (
     }
   </ul>
 );
+
+Etapes.propTypes = {
+  etapes: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
 
 // == Export
 export default Etapes;
