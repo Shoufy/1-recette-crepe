@@ -1,5 +1,6 @@
 // == Import npm
 import React from 'react';
+import PropTypes from 'prop-types';
 
 // == Import
 import 'src/styles/index.scss';
@@ -26,6 +27,17 @@ const Ingredients = ({ ingredients }) => {
     </div>
   );
 }
+
+Ingredients.propTypes = {
+  ingredients: PropTypes.arrayof(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      quantity: PropTypes.number.isRequired,
+      unit: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
 
 
 // == Export
