@@ -1,6 +1,6 @@
 // == Import npm
 import React from 'react';
-
+import PropTypes from 'prop-types';
 
 // == Import
 import 'src/styles/index.scss';
@@ -16,6 +16,13 @@ const Header = ({thumbnail, title, info, difficulty}) => {
   </header>
 )
   };
+
+Header.propTypes = {
+  thumbnail: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  info: PropTypes.string.isRequired,
+  difficulty: PropTypes.string.isRequired,
+}
 
 // == Export
 export default Header;
