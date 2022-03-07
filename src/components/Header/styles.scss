@@ -1,15 +1,9 @@
 .header {
-  // background-color: red;
-  // display: flex;
-  // justify-content: center;
-  // // position: relative;s
-  // box-sizing: content-box;
   position: relative;
   margin-bottom: 2rem;
   color: #fff;
 
   &-image {
-    // position: static;
     display: block;
     max-width: 100%;
     height: auto;
@@ -28,7 +22,6 @@
   }
 
   &-title {
-    // position: relative;
     font-size: 2.5em;
     font-family: Georgia, serif;
     font-style: italic;

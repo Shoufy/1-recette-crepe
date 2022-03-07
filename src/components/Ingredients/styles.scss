@@ -1,3 +1,34 @@
+$orange: #F18042;
+$orange-light: #f17f4223;
+
+
 .ingredients {
-  background-color: blue;
+  margin-bottom: 2rem;
+  // background-color: lightness($orange);
+  background-color: $orange-light;
+  padding: 2rem;
+
+  &-title {
+    font-size:1.4em;
+    margin-bottom: 1em;
+    font-weight: bold;
+  }
+}
+
+.ingredient {
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  padding: .5rem 2em;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  &-quantity {
+    background-color: $orange;
+    color: #fff;
+    padding: .3rem 1rem;
+    border-radius: .3rem;
+    margin-right: 1em;
+    display: inline-block;
+  }
 }
