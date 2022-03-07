@@ -34,3 +34,23 @@ $title-size: 1.4em;
     display: inline-block;
   }
 }
+
+//responsive
+$breakpoints : (
+  xs: 0,
+  sm: 360px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+@media screen and (max-width: map-get($breakpoints, "md")) {
+  .ingredients {
+    margin-bottom: 0.2rem;
+  }
+
+  .ingredient {
+    font-size: 0.8em;
+  }
+}

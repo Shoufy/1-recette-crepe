@@ -11,6 +11,7 @@ $orange: #F18042;
   .etapes-title {
     font-size: $title-size;
     margin-bottom: 1em;
+    font-weight: bold;
   }
 }
 
@@ -29,5 +30,21 @@ $orange: #F18042;
     position: absolute;
     left: 0;
     top: .7rem;
+  }
+}
+
+$breakpoints : (
+  xs: 0,
+  sm: 360px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+@media screen and (max-width: map-get($breakpoints, "md")) {
+  .etapes {
+    font-size: 0.8em;
+    margin-bottom: 0.2rem;
   }
 }
