@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 // == Import
 import './styles.scss';
-import 'src/styles/index.scss';
+// import 'src/styles/index.scss';
 
 // == Composant
 const Ingredients = ({ ingredients }) => {

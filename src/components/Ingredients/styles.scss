@@ -1,5 +1,6 @@
 $orange: #F18042;
 $orange-light: #f17f4223;
+$title-size: 1.4em;
 
 
 .ingredients {
@@ -7,9 +8,10 @@ $orange-light: #f17f4223;
   // background-color: lightness($orange);
   background-color: $orange-light;
   padding: 2rem;
+  border-radius: 1rem;
 
   &-title {
-    font-size:1.4em;
+    font-size: $title-size;
     margin-bottom: 1em;
     font-weight: bold;
   }

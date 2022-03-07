@@ -7,13 +7,13 @@ import './styles.scss';
 
 // == Composant
 const Etapes = ({ etapes }) => (
-  <div className="etape">
-    Préparation :
+  <div className="etapes">
+    <h2 className="etapes-title"> Préparation : </h2>
     <ul >
       {
         etapes.map((instruction, index) => {
           return (
-            <li key={'etapes-' + index} >
+            <li key={'etapes-' + index} className="etape">
               {instruction}
             </li>
           );
