@@ -5,7 +5,7 @@ import Ingredients from '../Ingredients';
 import Etapes from '../Etapes';
 
 // == Import
-import 'src/styles/index.scss';
+import './styles.css';
 import data from 'src/data/recipe';
 
 // == Composant

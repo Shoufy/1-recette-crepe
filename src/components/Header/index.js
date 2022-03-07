@@ -6,18 +6,22 @@ import PropTypes from 'prop-types';
 import './styles.scss';
 
 // == Composant
-const Header = ({thumbnail, title, info, difficulty}) => {
-  return(
-  
-  <header className="header">
-    <img src={thumbnail} alt={title} 
-    className="header-image"
-    />
-    <p className="header-title"> {title} </p>
-    <p className="header-info"> {info} - {difficulty} </p>
-  </header>
-)
-  };
+const Header = ({ thumbnail, title, info, difficulty }) => {
+  return (
+
+    <header className="header">
+      <img 
+      src={thumbnail} 
+      alt={title}
+      className="header-image"
+      />
+      <div className="header-content">
+        <h1 className="header-title"> {title} </h1>
+        <p className="header-info"> {info} - {difficulty} </p>
+      </div>
+    </header>
+  )
+};
 
 Header.propTypes = {
   thumbnail: PropTypes.string.isRequired,
