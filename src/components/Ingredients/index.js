@@ -3,12 +3,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // == Import
-import 'src/styles/index.scss';
+import './styles.scss';
 
 // == Composant
 const Ingredients = ({ ingredients }) => {
   return (
     <div className="ingredients">
+      <div> Ingrédients :</div>  
       <ul>
         {
           // Je reçois des objets dans le tableau "ingrédients"
@@ -29,7 +30,7 @@ const Ingredients = ({ ingredients }) => {
 }
 
 Ingredients.propTypes = {
-  ingredients: PropTypes.arrayof(
+  ingredients: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
       quantity: PropTypes.number.isRequired,

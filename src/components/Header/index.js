@@ -3,16 +3,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // == Import
-import 'src/styles/index.scss';
+import './styles.scss';
 
 // == Composant
 const Header = ({thumbnail, title, info, difficulty}) => {
   return(
   
-  <header className="app">
-    <img src={thumbnail} alt="crepe" />
-    <p> {title} </p>
-    <p> {info} - {difficulty} </p>
+  <header className="header">
+    <img src={thumbnail} alt={title} 
+    className="header-image"
+    />
+    <p className="header-title"> {title} </p>
+    <p className="header-info"> {info} - {difficulty} </p>
   </header>
 )
   };
